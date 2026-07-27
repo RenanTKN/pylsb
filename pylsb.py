@@ -125,7 +125,7 @@ binText = ""
 filename = ""
 output = ""
 imageFile = options.image
-image = Image.open(imageFile)
+image = Image.open(imageFile).convert("RGB")
 px = image.load()
 w, h = image.size
 
